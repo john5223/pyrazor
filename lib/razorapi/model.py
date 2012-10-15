@@ -54,9 +54,7 @@ class FlavorManager(base.ManagerWithFind):
 
 		Refer to the CLI / API documentation for Razor for more information
 		"""
-		body = {'label': label, 
-				'image_uuid': image_uuid, 
-				'template': template,
+		body = {'label': label, 'image_uuid': image_uuid, 'template': template,
 		        'req_metadata_hash': {
 		        	'hostname_prefix': hostname_prefix,
 		        	'domainname': domain_name,
@@ -78,8 +76,7 @@ class FlavorManager(base.ManagerWithFind):
 
 		Refer to the CLI / API documentation for Razor for more information
 		"""
-		body = {'label': label, 
-				'image_uuid': image_uuid,
+		body = {'label': label, 'image_uuid': image_uuid,
 		        'req_metadata_hash': {
 		        	'hostname_prefix': hostname_prefix,
 		        	'domainname': domain_name,
