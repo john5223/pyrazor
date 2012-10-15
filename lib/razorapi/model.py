@@ -9,7 +9,7 @@ class Model(base.Resource):
 	def __repr__(self):
 		return "<Model: %s>" % self.name
 
-class FlavorManager(base.ManagerWithFind):
+class ModelManager(base.ManagerWithFind):
 	"""
 	Manage :class:`Model` resources
 	"""
@@ -24,14 +24,14 @@ class FlavorManager(base.ManagerWithFind):
 		"""
 		return self._list("/model", "model")
 
-	def get(self, model):
+	def get(self, uuid):
 		"""
 		Get a specific model.
 
 		:param model: The uuid of the :class:`Model` to get.
-		:rtype: :class:`Flavor`
+		:rtype: :class:`Model`
 		"""
-		return self._get("/model/%s" % base.getid(model), "model")
+		return self._get("/model/%s" % base.getid(uuid), "model")
 
 	def templates(self):
 		"""
@@ -54,6 +54,7 @@ class FlavorManager(base.ManagerWithFind):
 
 		Refer to the CLI / API documentation for Razor for more information
 		"""
+		
 		body = {'label': label, 'image_uuid': image_uuid, 'template': template,
 		        'req_metadata_hash': {
 		        	'hostname_prefix': hostname_prefix,
@@ -76,6 +77,7 @@ class FlavorManager(base.ManagerWithFind):
 
 		Refer to the CLI / API documentation for Razor for more information
 		"""
+
 		body = {'label': label, 'image_uuid': image_uuid,
 		        'req_metadata_hash': {
 		        	'hostname_prefix': hostname_prefix,
