@@ -2,7 +2,7 @@
 Base utilities to build API operation managers and objects on top of.
 """
 
-from razorapi.exceptions import NotFound
+from razor.exceptions import NotFound
 
 # Python 2.4 compat
 try:

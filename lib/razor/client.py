@@ -12,8 +12,8 @@ if not hasattr(urlparse, 'parse_qsl'):
     import cgi
     urlparse.parse_qsl = cgi.parse_qsl
 
-import razorapi
-from razorapi import exceptions
+import razor
+from razor import exceptions
 
 class RazorApiClient(httplib2.Http):
     

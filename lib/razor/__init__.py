@@ -1,8 +1,8 @@
 __version__ = '1.0'
 
-from razorapi.client import RazorApiClient
-from razorapi.active_model import ActiveModelManager, ActiveModel
-from razorapi.model import ModelManager, Model
+from razor.client import RazorApiClient
+from razor.activemodel import ActiveModelManager, ActiveModel
+from razor.model import ModelManager, Model
 
 class Razor(object):
 	"""

@@ -1,4 +1,4 @@
-from razorapi import base
+from razor import base
 from urllib import quote_plus
 
 class Model(base.Resource):

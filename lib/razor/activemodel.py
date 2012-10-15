@@ -1,4 +1,4 @@
-from razorapi import base
+from razor import base
 
 class ActiveModel(base.Resource):
 	"""
