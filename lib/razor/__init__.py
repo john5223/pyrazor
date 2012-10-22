@@ -22,3 +22,4 @@ class Razor(object):
 		self.client = RazorApiClient(self, url, port)
 		self.models = ModelManager(self)
 		self.activemodels = ActiveModelManager(self)
+		self.nodes = NodeManager(self)
