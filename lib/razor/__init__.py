@@ -21,5 +21,7 @@ class Razor(object):
 	def __init__(self, url, port=8026):
 		self.client = RazorApiClient(self, url, port)
 		self.models = ModelManager(self)
-		self.activemodels = ActiveModelManager(self)
-		self.nodes = NodeManager(self)
+		self.amss 	= ActiveModelManager(self)
+		self.nodes 	= NodeManager(self)
+		self.broker = BrokerManager(self)
+		self.policy = PolicyManager(self)
