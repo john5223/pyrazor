@@ -2,6 +2,8 @@
 
 # C extensions
 *.so
+=======
+*.py[co]
 
 # Packages
 *.egg
@@ -33,3 +35,10 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+=======
+
+#Translations
+*.mo
+
+#Mr Developer
+.mr.developer.cfg
